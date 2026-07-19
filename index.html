@@ -4,50 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MJ LEGACY | Financial & Management Consulting - East London, EC</title>
-<meta name="description" content="MJ LEGACY - Trusted Financial & Management Consultants in East London. Founded by Johannes Job & Fiona Job. Business Growth, Tax, Accounting, Strategy.">
+<meta name="description" content="MJ LEGACY - Trusted Financial & Management Consultants in East London. Founded by Johannes Job & Fiona Job.">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
 :root { --navy: #0A1F44; --gold: #D4AF37; --light: #F7F9FC; --green: #25D366; --gray: #6c757d; }
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
-body { background: var(--light); color: #222; }
+body { background: var(--light); color: #222; font-size: 18px; } /* BIGGER BASE FONT */
 
-nav { position: fixed; width: 100%; background: rgba(10,31,68,0.95); backdrop-filter: blur(10px); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items:center; z-index: 1000; }
-.logo { color: white; font-size: 1.6rem; font-weight: 800; font-family: 'Playfair Display', serif; }
+nav { position: fixed; width: 100%; background: rgba(10,31,68,0.97); backdrop-filter: blur(10px); padding: 1.8rem 10%; display: flex; justify-content: space-between; align-items:center; z-index: 1000; }
+.logo { color: white; font-size: 2.2rem; font-weight: 800; font-family: 'Playfair Display', serif; } /* BIGGER LOGO */
 .logo span { color: var(--gold); }
-.location-tag { font-size: 0.8rem; color: var(--gold); display:block; }
+.location-tag { font-size: 1rem; color: var(--gold); display:block; font-weight: 600; }
 
-.hero { background: linear-gradient(rgba(10,31,68,0.88), rgba(10,31,68,0.88)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932') center/cover; color: white; min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem; }
-.hero h1 { font-size: 3.2rem; font-family: 'Playfair Display', serif; margin-bottom: 1rem; line-height: 1.2; }
-.hero .sub { font-size: 1.3rem; color: var(--gold); font-weight: 600; margin-bottom: 1.5rem; }
-.btn { background: var(--gold); color: var(--navy); padding: 1.1rem 2.8rem; border-radius: 50px; text-decoration: none; font-weight: 700; display:inline-block; margin: 0.5rem; transition: transform 0.3s; font-size: 1rem; }
-.btn:hover { transform: translateY(-3px); }
+.hero { background: linear-gradient(rgba(10,31,68,0.88), rgba(10,31,68,0.88)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932') center/cover; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 8rem 5%; } /* FULL SCREEN */
+.hero h1 { font-size: 4.2rem; font-family: 'Playfair Display', serif; margin-bottom: 1.5rem; line-height: 1.2; font-weight: 800; } /* MUCH BIGGER */
+.hero .sub { font-size: 1.6rem; color: var(--gold); font-weight: 700; margin-bottom: 2rem; }
+.hero p { font-size: 1.3rem; }
+.btn { background: var(--gold); color: var(--navy); padding: 1.4rem 3.5rem; border-radius: 50px; text-decoration: none; font-weight: 800; display:inline-block; margin: 0.5rem; transition: transform 0.3s; font-size: 1.2rem; } /* BIGGER BUTTON */
+.btn:hover { transform: translateY(-5px); }
 
-section { padding: 6rem 8%; }
-.section-title { text-align: center; font-size: 2.6rem; color: var(--navy); margin-bottom: 1rem; font-family: 'Playfair Display', serif; }
-.section-sub { text-align: center; color: var(--gray); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; }
+section { padding: 8rem 10%; } /* BIGGER SECTIONS */
+.section-title { text-align: center; font-size: 3.5rem; color: var(--navy); margin-bottom: 1.5rem; font-family: 'Playfair Display', serif; font-weight: 800; } /* BIGGER TITLE */
+.section-sub { text-align: center; color: var(--gray); margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; font-size: 1.2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; } /* BIGGER CARDS */
 
-.card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border-top: 4px solid var(--gold); transition: transform 0.3s; }
-.card:hover { transform: translateY(-5px); }
-.card h3 { color: var(--navy); margin-bottom: 1rem; font-size: 1.3rem; }
+.card { background: white; padding: 3.5rem; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); border-top: 5px solid var(--gold); transition: transform 0.3s; }
+.card:hover { transform: translateY(-8px); }
+.card h3 { color: var(--navy); margin-bottom: 1.2rem; font-size: 1.6rem; }
+.card p { font-size: 1.1rem; line-height: 1.7; }
 
 .team-card { text-align: center; }
-.team-card img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--navy); margin-bottom: 1.5rem; }
-.team-title { color: var(--gold); font-weight: 700; font-size: 0.9rem; letter-spacing: 1px; }
-.contact-btn { display: flex; align-items: center; justify-content:center; gap: 0.8rem; background: var(--light); color: var(--navy); padding: 0.9rem; border-radius: 10px; text-decoration: none; font-weight: 700; margin: 0.8rem 0; transition: background 0.3s; }
+.team-card img { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 6px solid var(--navy); margin-bottom: 2rem; } /* BIGGER PHOTOS */
+.team-card h3 { font-size: 2rem; }
+.team-title { color: var(--gold); font-weight: 800; font-size: 1.1rem; letter-spacing: 2px; }
+.contact-btn { display: flex; align-items: center; justify-content:center; gap: 1rem; background: var(--light); color: var(--navy); padding: 1.2rem; border-radius: 12px; text-decoration: none; font-weight: 700; margin: 1rem 0; transition: background 0.3s; font-size: 1.1rem; }
 .contact-btn:hover { background: #e9ecef; }
 .contact-btn.whatsapp { background: var(--green); color: white; }
 .contact-btn.whatsapp:hover { background: #22c55e; }
 
 .contact-card { background: var(--navy); color: white; text-align: center; }
 .contact-card .section-title { color: white; }
+.contact-card p { font-size: 1.3rem; }
 
-footer { background: #07152E; color: white; text-align: center; padding: 3rem 2rem; }
+footer { background: #07152E; color: white; text-align: center; padding: 4rem 2rem; font-size: 1.1rem; }
 
 @media(max-width: 768px) {
-  .hero h1 { font-size: 2.2rem; }
-  nav { padding: 1rem 5%; }
-  section { padding: 4rem 5%; }
+  body { font-size: 16px; }
+  .hero h1 { font-size: 2.8rem; }
+  nav { padding: 1.2rem 6%; }
+  section { padding: 5rem 6%; }
+  .section-title { font-size: 2.5rem; }
+  .team-card img { width: 200px; height: 200px; }
 }
 </style>
 </head>
@@ -65,7 +72,7 @@ footer { background: #07152E; color: white; text-align: center; padding: 3rem 2r
     <p class="sub">East London's Trusted Financial & Management Consultants</p>
     <h1>Building A Legacy of Growth For Eastern Cape Businesses</h1>
     <p>Strategic Financial Planning | Business Management | Tax Solutions</p>
-    <div style="margin-top: 2rem;">
+    <div style="margin-top: 3rem;">
       <a href="#contact" class="btn">Book A Free Consultation</a>
     </div>
   </div>
@@ -73,19 +80,19 @@ footer { background: #07152E; color: white; text-align: center; padding: 3rem 2r
 
 <section id="services">
   <h2 class="section-title">Our Services</h2>
-  <p class="section-sub">Comprehensive solutions to help your business thrive</p>
+  <p class="section-sub">Comprehensive solutions to help your business thrive and grow</p>
   <div class="grid">
     <div class="card">
       <h3>📊 Financial Planning</h3>
-      <p>Budgeting, cash flow management, financial forecasting and strategic planning for sustainable growth.</p>
+      <p>Budgeting, cash flow management, financial forecasting and strategic planning for sustainable growth and long-term success.</p>
     </div>
     <div class="card">
       <h3>🏢 Business Management</h3>
-      <p>Operational efficiency, team leadership, process improvement and business strategy development.</p>
+      <p>Operational efficiency, team leadership, process improvement and business strategy development for maximum performance.</p>
     </div>
     <div class="card">
       <h3>📑 Tax & Compliance</h3>
-      <p>SARS compliance, tax returns, VAT, payroll and all regulatory requirements handled professionally.</p>
+      <p>SARS compliance, tax returns, VAT, payroll and all regulatory requirements handled professionally and accurately.</p>
     </div>
   </div>
 </section>
@@ -93,13 +100,13 @@ footer { background: #07152E; color: white; text-align: center; padding: 3rem 2r
 <section id="team">
   <h2 class="section-title">Meet The Founders</h2>
   <p class="section-sub">Leadership with experience, integrity and a passion for your success</p>
-  <div class="grid" style="max-width:900px; margin:0 auto;">
+  <div class="grid" style="max-width:1000px; margin:0 auto;">
     <div class="card team-card">
       <img src="johannes.jpg" alt="Johannes Job">
       <h3>Johannes Job</h3>
       <p class="team-title">CO-FOUNDER</p>
       <p><b>Financial Strategy Lead</b></p>
-      <p style="color:var(--gray); margin: 1rem 0;">Specializing in financial planning, tax solutions and business growth.</p>
+      <p style="color:var(--gray); margin: 1.5rem 0;">Specializing in financial planning, tax solutions and business growth strategies.</p>
       <a href="tel:0656229855" class="contact-btn">📞 065 622 9855</a>
       <a href="https://wa.me/27656229855" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
     </div>
@@ -108,7 +115,7 @@ footer { background: #07152E; color: white; text-align: center; padding: 3rem 2r
       <h3>Fiona Job</h3>
       <p class="team-title">CO-FOUNDER</p>
       <p><b>Business Management Lead</b></p>
-      <p style="color:var(--gray); margin: 1rem 0;">Specializing in operations, management and organizational development.</p>
+      <p style="color:var(--gray); margin: 1.5rem 0;">Specializing in operations, management and organizational development.</p>
       <a href="tel:0790888574" class="contact-btn">📞 079 088 8574</a>
       <a href="https://wa.me/27790888574" target="_blank" class="contact-btn whatsapp">💬 WhatsApp</a>
     </div>
@@ -118,13 +125,13 @@ footer { background: #07152E; color: white; text-align: center; padding: 3rem 2r
 <section id="contact" class="contact-card">
   <h2 class="section-title">Let’s Grow Your Business</h2>
   <p class="section-sub" style="color:#ccc;">Book your free consultation with the MJ LEGACY team today</p>
-  <p style="font-size: 1.2rem; margin: 2rem 0;"><b>Fiona:</b> 079 088 8574 | <b>Johannes:</b> 065 622 9855</p>
-  <p>📍 East London, Eastern Cape, South Africa</p>
+  <p style="font-size: 1.5rem; margin: 2.5rem 0;"><b>Fiona:</b> 079 088 8574 | <b>Johannes:</b> 065 622 9855</p>
+  <p style="font-size: 1.2rem;">📍 East London, Eastern Cape, South Africa</p>
 </section>
 
 <footer>
   <p>© 2026 MJ LEGACY. All Rights Reserved.</p>
-  <p style="margin-top: 0.5rem; color: var(--gold);">Founded by Johannes Job & Fiona Job | East London, EC</p>
+  <p style="margin-top: 1rem; color: var(--gold); font-weight: 600;">Founded by Johannes Job & Fiona Job | East London, EC</p>
 </footer>
 
 </body>
