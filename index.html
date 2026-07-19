@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJ LEGACY | Financial & Management Consulting - East London, EC</title>
+<meta name="description" content="MJ LEGACY - Trusted Financial & Management Consultants in East London. Founded by Johannes Job & Fiona Job. Business Growth, Tax, Accounting, Strategy.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:wght@700&display=swap');
+:root { --navy: #0A1F44; --gold: #D4AF37; --light: #F7F9FC; --green: #25D366; --gray: #6c757d; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; }
+body { background: var(--light); color: #222; }
+
+nav { position: fixed; width: 100%; background: rgba(10,31,68,0.95); backdrop-filter: blur(10px); padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items:center; z-index: 1000; }
+.logo { color: white; font-size: 1.6rem; font-weight: 800; font-family: 'Playfair Display', serif; }
+.logo span { color: var(--gold); }
+.location-tag { font-size: 0.8rem; color: var(--gold); display:block; }
+
+.hero { background: linear-gradient(rgba(10,31,68,0.9), rgba(10,31,68,0.9)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1932') center/cover; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 6rem 2rem; }
+.hero h1 { font-size: 3.5rem; font-family: 'Playfair Display', serif; margin-bottom: 1rem; line-height: 1.2; }
+.hero .sub { font-size: 1.4rem; color: var(--gold); font-weight: 600; margin-bottom: 2rem; }
+.btn-group { margin-top: 2rem; }
+.btn { background: var(--gold); color: var(--navy); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 800; display:inline-block; margin: 0.5rem; transition: transform 0.3s; }
+.btn:hover { transform: translateY(-3px); }
+.btn-outline { background: transparent; border: 2px solid white; color: white; }
+
+section { padding: 6rem 8%; }
+.section-title { text-align: center; font-size: 2.8rem; color: var(--navy); margin-bottom: 1rem; font-family: 'Playfair Display', serif; }
+.section-sub { text-align: center; color: var(--gray); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+.card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border-top: 4px solid var(--gold); transition: transform 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.card h3 { color: var(--navy); margin-bottom: 1rem; font-size: 1.3rem; }
+
+.team-card { text-align: center; }
+.team-card img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid var(--gold); margin-bottom: 1.5rem; }
+.contact-btn { display: flex; align-items: center; justify-content:center; gap: 0.8rem; background: var(--light); color: var(--navy); padding: 1rem; border-radius: 10px; text-decoration: none; font-weight: 700; margin: 0.8rem 0; transition: background 0.3s; }
+.contact-btn:hover { background: #e9ecef; }
+.contact-btn.whatsapp { background: var(--green); color: white; }
+.contact-btn.whatsapp:hover { background: #22c55e; }
+
+.about { background: white; }
+.about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+
+.contact-card { background: var(--navy); color: white; text-align: center; }
+.contact-card .section-title { color: white; }
+
+footer { background: #07152E; color: white; text-align: center; padding: 3rem 2rem; }
+
+@media(max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  nav { padding: 1rem 5%; }
+  section { padding: 4rem 5%; }
+  .about-content { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div>
+    <div class="logo">MJ <span>LEGACY</span></div>
+    <span class="location-tag">East London, Eastern Cape</span>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <p class="sub">East London's Trusted Financial & Management Consultants</p>
+    <h1>Building A Legacy of Growth For Eastern Cape Businesses</h1>
+    <p>Strategic Financial Planning | Business Management | Tax Solutions</p>
+    <div class="btn-group">
+      <a href="tel:0656229855" class="btn">Call Johannes</a>
+      <a href="#contact" class="btn btn-outline">Free Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-sub">Comprehensive solutions to help your business thrive</p>
+  <div class="grid">
+    <div class="card">
+      <h3>📊 Financial Planning</h3>
+      <p>Budgeting, cash flow management, financial forecasting and strategic planning for sustainable growth.</p>
+    </div>
+    <div class="card">
+      <h3>🏢 Business Management</h3>
+      <p>Operational efficiency, team leadership, process improvement and business strategy development.</p>
+    </div>
+    <div class="card">
+      <h3>📑 Tax & Compliance</h3>
+      <p>SARS compliance, tax returns, VAT, payroll and all regulatory requirements handled professionally.</p>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="about">
+  <h2 class="section-title">Meet The Founders</h2>
+  <p class="section-sub">The team behind MJ LEGACY</p>
+  <div class="grid" style="max-width:900px; margin:0 auto;">
+    <div class="card team-card">
+      <img src="johannes.jpg" alt="Johannes Job">
+      <h3>Johannes Job</h3>
+      <p><b>Co-Founder & Financial Lead</b></p>
+      <p style="color:var(--gray); margin: 1rem 0;">Expert in financial strategy and business growth</p>
+      <a href="tel:0656229855" class="contact-btn">📞 065 622 9855</a>
+      <a href="https://wa.me/27656229855" target="_blank" class="contact-btn whatsapp">💬 WhatsApp Johannes</a>
+    </div>
+    <div class="card team-card">
+      <img src="fiona.jpg" alt="Fiona Job">
+      <h3>Fiona Job</h3>
+      <p><b>Co-Founder & Management Lead</b></p>
+      <p style="color:var(--gray); margin: 1rem 0;">Specialist in business operations and management</p>
+      <a href="tel:0790888574" class="contact-btn">📞 079 088 8574</a>
+      <a href="https://wa.me/27790888574" target="_blank" class="contact-btn whatsapp">💬 WhatsApp Fiona</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-card">
+  <h2 class="section-title">Book Your Free Consultation</h2>
+  <p class="section-sub" style="color:#ccc;">Let's discuss how we can grow your business</p>
+  <p style="font-size: 1.2rem; margin: 2rem 0;"><b>Fiona:</b> 079 088 8574 | <b>Johannes:</b> 065 622 9855</p>
+  <p>📍 East London, Eastern Cape, South Africa</p>
+</section>
+
+<footer>
+  <p>© 2026 MJ LEGACY. All Rights Reserved.</p>
+  <p style="margin-top: 0.5rem; color: var(--gold);">Founded by Johannes Job & Fiona Job | East London, EC</p>
+</footer>
+
+</body>
+</html>
